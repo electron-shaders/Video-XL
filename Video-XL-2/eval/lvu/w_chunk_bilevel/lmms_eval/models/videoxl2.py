@@ -579,7 +579,7 @@ class Videoxl2(lmms):
 
                 with torch.inference_mode():
                     output_ids = self.model.generate(input_ids, images=image_tensor,time_embedding=time_stamps,  prev_blocks_num=self.prev_blocks_num, block_size_chosed=self.block_size_chosed, selected_unit_indices=selected_unit_indices, selected_config=selected_config, **gen_kwargs)
-                
+                torch.cuda.empty_cache()
                 text_outputs = self.tokenizer.batch_decode(output_ids, skip_special_tokens=True)
             except Exception as e:
                 raise e
