@@ -866,8 +866,7 @@ class ConfigurableTask(Task):
                 return
 
             if "video" in dataset_kwargs and dataset_kwargs["video"]:
-                # hf_home = os.getenv("HF_HOME", "~/.cache/huggingface/")
-                hf_home="/share/junjie/shuyan/lmms-eval/~/.cache/huggingface"
+                hf_home = os.getenv("HF_HOME", "~/.cache/huggingface/")
                 hf_home = os.path.expanduser(hf_home)
                 cache_dir = dataset_kwargs["cache_dir"]
                 cache_dir = os.path.join(hf_home, cache_dir)
@@ -967,6 +966,7 @@ class ConfigurableTask(Task):
                 self.dataset = datasets.load_dataset(
                     path=self.DATASET_PATH,
                     name=self.DATASET_NAME,
+                    cache_dir=cache_dir if "cache_dir" in locals() else None,
                     download_mode=datasets.DownloadMode.REUSE_DATASET_IF_EXISTS,
                     download_config=download_config,
                     **dataset_kwargs if dataset_kwargs is not None else {},
@@ -982,7 +982,7 @@ class ConfigurableTask(Task):
             target_category = self.config.target_category
             filtered_dict = DatasetDict()
             for split, dataset in self.dataset.items():
-                filtered_dataset = dataset.filter(lambda x: x[category_split][0] in target_category)
+                filtered_dataset = dataset.filter(lambda x: x[category_split] in target_category)
                 filtered_dict[split] = filtered_dataset
             self.dataset = filtered_dict
 

@@ -65,7 +65,7 @@ TASK_CATEGORIES = [
     "Information Synopsis",
 ]
 
-hf_home = "YOUR_HF_HOME" # which include ./videomme/*.mp4
+hf_home = os.getenv("HF_HOME", "~/.cache/huggingface/")
 base_cache_dir = os.path.expanduser(hf_home)
 with open(Path(__file__).parent / "videomme.yaml", "r") as f:
     raw_data = f.readlines()
@@ -161,7 +161,7 @@ def extract_subtitles(video_path, subtitle_path):
 def videomme_doc_to_visual(doc):
     cache_dir = os.path.join(base_cache_dir, cache_name)
     video_path = doc["videoID"] + ".mp4"
-    video_path = os.path.join(cache_dir, video_path)
+    video_path = os.path.join(cache_dir, "data", video_path)
     if os.path.exists(video_path):
         video_path = video_path
     elif os.path.exists(video_path.replace("mp4", "MP4")):
