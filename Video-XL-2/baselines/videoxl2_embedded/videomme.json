@@ -1,0 +1,99 @@
+{
+  "task": "videomme",
+  "samples": [
+    {
+      "modern_task": "videomme",
+      "embedded_task": "videomme_short",
+      "doc_id": 0,
+      "stable_sample_id": "001-1",
+      "prompt": "Select the best answer to the following multiple-choice question based on the video and the subtitles. Respond with only the letter (A, B, C, or D) of the correct option.\nWhen demonstrating the Germany modern Christmas tree is initially decorated with apples, candles and berries, which kind of the decoration has the largest number?\n['A. Apples.', 'B. Candles.', 'C. Berries.', 'D. The three kinds are of the same number.']\n\nAnswer with the option's letter from the given choices directly.",
+      "video_path": "fFjv93ACGo8.mp4",
+      "prediction": "A",
+      "target": "C",
+      "scores": {
+        "videomme_percetion_score": {
+          "question_id": "001-1",
+          "duration": "short",
+          "category": "Knowledge",
+          "sub_category": "Humanity & History",
+          "task_category": "Counting Problem",
+          "pred_answer": "A",
+          "answer": "C"
+        }
+      },
+      "selection": {
+        "selection_mode": "bi_level",
+        "selection_hit": true,
+        "selection_key": "fFjv93ACGo8.mp4_When demonstrating the Germany modern Christmas tree is initially decorated with apples, candles and berries, which kind of the decoration has the largest number?",
+        "selection_files": [
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/videomme/videomme_short.json",
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/videomme/videomme_mid.json",
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/videomme/videomme_long.json"
+        ],
+        "selected_unit_indices": [
+          19,
+          23,
+          22,
+          20,
+          25,
+          24
+        ],
+        "selection_config": {
+          "selected_topk": 6,
+          "selected_chunk_size": 12,
+          "compression": 4,
+          "relevance oracle": "languagebind"
+        }
+      },
+      "source_path": "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/logs/videoxl2-w_chunk_bi-videomme_short/0620_1458_videoxl2_videoxl2_model_args_ad1625/videomme_short.json"
+    },
+    {
+      "modern_task": "videomme",
+      "embedded_task": "videomme_short",
+      "doc_id": 1,
+      "stable_sample_id": "001-2",
+      "prompt": "Select the best answer to the following multiple-choice question based on the video and the subtitles. Respond with only the letter (A, B, C, or D) of the correct option.\nWhat is the genre of this video?\n['A. It is a news report that introduces the history behind Christmas decorations.', 'B. It is a documentary on the evolution of Christmas holiday recipes.', 'C. It is a travel vlog exploring Christmas markets around the world.', 'D. It is a tutorial on DIY Christmas ornament crafting.']\n\nAnswer with the option's letter from the given choices directly.",
+      "video_path": "fFjv93ACGo8.mp4",
+      "prediction": "A",
+      "target": "A",
+      "scores": {
+        "videomme_percetion_score": {
+          "question_id": "001-2",
+          "duration": "short",
+          "category": "Knowledge",
+          "sub_category": "Humanity & History",
+          "task_category": "Information Synopsis",
+          "pred_answer": "A",
+          "answer": "A"
+        }
+      },
+      "selection": {
+        "selection_mode": "bi_level",
+        "selection_hit": true,
+        "selection_key": "fFjv93ACGo8.mp4_What is the genre of this video?",
+        "selection_files": [
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/videomme/videomme_short.json",
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/videomme/videomme_mid.json",
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/videomme/videomme_long.json"
+        ],
+        "selected_unit_indices": [
+          38,
+          39,
+          37,
+          24,
+          25,
+          31,
+          33,
+          36
+        ],
+        "selection_config": {
+          "selected_topk": 8,
+          "selected_chunk_size": 12,
+          "compression": 4,
+          "relevance oracle": "languagebind"
+        }
+      },
+      "source_path": "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/logs/videoxl2-w_chunk_bi-videomme_short/0620_1458_videoxl2_videoxl2_model_args_ad1625/videomme_short.json"
+    }
+  ]
+}

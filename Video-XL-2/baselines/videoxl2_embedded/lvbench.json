@@ -1,0 +1,96 @@
+{
+  "task": "lvbench",
+  "samples": [
+    {
+      "modern_task": "lvbench",
+      "embedded_task": "lvbench_cartoon",
+      "doc_id": 0,
+      "stable_sample_id": 0,
+      "prompt": "What year appears in the opening caption of the video?\nA. (A) 1636\nB. (B) 1366\nC. (C) 1363\nD. (D) 1633\nAnswer with the option's letter from the given choices directly.",
+      "video_path": "Cm73ma6Ibcs.mp4",
+      "prediction": "C",
+      "target": "(D) 1633",
+      "scores": {
+        "lvbench_mc_accuracy": {
+          "pred_answer": "C",
+          "gt_answer": "D",
+          "score": 0
+        }
+      },
+      "selection": {
+        "selection_mode": "bi_level",
+        "selection_hit": true,
+        "selection_key": "Cm73ma6Ibcs_What year appears in the opening caption of the video?",
+        "selection_files": [
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_cartoon.json",
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_documentary.json",
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_live.json",
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_selfmedia.json",
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_sport.json",
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_tv.json"
+        ],
+        "selected_unit_indices": [
+          0,
+          74,
+          21,
+          39,
+          1,
+          71
+        ],
+        "selection_config": {
+          "selected_topk": 6,
+          "selected_chunk_size": 12,
+          "compression": 4,
+          "relevance oracle": "languagebind"
+        }
+      },
+      "source_path": "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/logs/videoxl2-w_chunk_bilevel-lvbench_cartoon/0630_1705_videoxl2_videoxl2_model_args_1b8800/lvbench_cartoon.json"
+    },
+    {
+      "modern_task": "lvbench",
+      "embedded_task": "lvbench_cartoon",
+      "doc_id": 1,
+      "stable_sample_id": 1,
+      "prompt": "How is the weather like in the opening?\nA. (A) Cloudy\nB. (B) Snowy\nC. (C) Sunny\nD. (D) Rainy\nAnswer with the option's letter from the given choices directly.",
+      "video_path": "Cm73ma6Ibcs.mp4",
+      "prediction": "B",
+      "target": "(B) Snowy",
+      "scores": {
+        "lvbench_mc_accuracy": {
+          "pred_answer": "B",
+          "gt_answer": "B",
+          "score": 1
+        }
+      },
+      "selection": {
+        "selection_mode": "bi_level",
+        "selection_hit": true,
+        "selection_key": "Cm73ma6Ibcs_How is the weather like in the opening?",
+        "selection_files": [
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_cartoon.json",
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_documentary.json",
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_live.json",
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_selfmedia.json",
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_sport.json",
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_tv.json"
+        ],
+        "selected_unit_indices": [
+          17,
+          0,
+          19,
+          14,
+          18,
+          15,
+          16
+        ],
+        "selection_config": {
+          "selected_topk": 7,
+          "selected_chunk_size": 12,
+          "compression": 4,
+          "relevance oracle": "languagebind"
+        }
+      },
+      "source_path": "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/logs/videoxl2-w_chunk_bilevel-lvbench_cartoon/0630_1705_videoxl2_videoxl2_model_args_1b8800/lvbench_cartoon.json"
+    }
+  ]
+}

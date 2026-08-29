@@ -1,0 +1,85 @@
+{
+  "task": "mlvu_dev",
+  "samples": [
+    {
+      "modern_task": "mlvu_dev",
+      "embedded_task": "mlvu",
+      "doc_id": 0,
+      "stable_sample_id": "Q0",
+      "prompt": "\nWhat does the hand coming out of the computer do?\n(A) Delivers a product\n(B) Shakes the woman's hand\n(C) Takes the woman's credit card\n(D) Points at something on the screen\n\nOnly give the best option.\n\nBest option: (",
+      "video_path": "needle_32.mp4",
+      "prediction": "(A) Delivers a product.",
+      "target": "A",
+      "scores": {
+        "mlvu_percetion_score": {
+          "question_id": "What does the hand coming out of the computer do?\n(A) Delivers a product\n(B) Shakes the woman's hand\n(C) Takes the woman's credit card\n(D) Points at something on the screen\n",
+          "task_type": "needle",
+          "pred_answer": "A",
+          "answer": "A"
+        }
+      },
+      "selection": {
+        "selection_mode": "bi_level",
+        "selection_hit": true,
+        "selection_key": "needle_32.mp4_What does the hand coming out of the computer do?",
+        "selection_files": [
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/mlvu.json"
+        ],
+        "selected_unit_indices": [
+          10,
+          11,
+          21,
+          20,
+          24
+        ],
+        "selection_config": {
+          "selected_topk": 5,
+          "selected_chunk_size": 4,
+          "compression": 4,
+          "relevance oracle": "languagebind"
+        }
+      },
+      "source_path": "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/logs/videoxl2-w_chunk_bilevel-mlvu/0623_0804_videoxl2_videoxl2_model_args_c45cec/mlvu.json"
+    },
+    {
+      "modern_task": "mlvu_dev",
+      "embedded_task": "mlvu",
+      "doc_id": 1,
+      "stable_sample_id": "Q1",
+      "prompt": "\nWhat is a popular activity on the beach during the monsoon season?\n(A) Picnicking\n(B) Surfing\n(C) Playing volleyball\n(D) Fishing\n\nOnly give the best option.\n\nBest option: (",
+      "video_path": "needle_38.mp4",
+      "prediction": "(D) Fishing.",
+      "target": "D",
+      "scores": {
+        "mlvu_percetion_score": {
+          "question_id": "What is a popular activity on the beach during the monsoon season?\n(A) Picnicking\n(B) Surfing\n(C) Playing volleyball\n(D) Fishing\n",
+          "task_type": "needle",
+          "pred_answer": "D",
+          "answer": "D"
+        }
+      },
+      "selection": {
+        "selection_mode": "bi_level",
+        "selection_hit": true,
+        "selection_key": "needle_38.mp4_What is a popular activity on the beach during the monsoon season?",
+        "selection_files": [
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/mlvu.json"
+        ],
+        "selected_unit_indices": [
+          28,
+          3,
+          8,
+          12,
+          0
+        ],
+        "selection_config": {
+          "selected_topk": 5,
+          "selected_chunk_size": 4,
+          "compression": 4,
+          "relevance oracle": "languagebind"
+        }
+      },
+      "source_path": "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/logs/videoxl2-w_chunk_bilevel-mlvu/0623_0804_videoxl2_videoxl2_model_args_c45cec/mlvu.json"
+    }
+  ]
+}

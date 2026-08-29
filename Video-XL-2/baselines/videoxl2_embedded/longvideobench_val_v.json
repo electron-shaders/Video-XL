@@ -1,0 +1,99 @@
+{
+  "task": "longvideobench_val_v",
+  "samples": [
+    {
+      "modern_task": "longvideobench_val_v",
+      "embedded_task": "longvideobench_val_v",
+      "doc_id": 0,
+      "stable_sample_id": "86CxyhFV9MI_0",
+      "prompt": "In the video, which subtitles appear at the same time as the man with black hair, dressed in grey clothes with black sleeves, on stage?\nA. promisc has come to an end, in and run away countless times, i was just scared, i still\nB. run away countless times, i was just scared, i still and front of our crown, like a world of souls,\nC. promisc has come to an end, in and front of our crown, like a world of souls,\nD. promisc has come to an end, in and captain of the godson, three three three three three three\nAnswer with the option's letter from the given choices directly.\n",
+      "video_path": "86CxyhFV9MI.mp4",
+      "prediction": "C",
+      "target": 1,
+      "scores": {
+        "lvb_acc": {
+          "id": "86CxyhFV9MI_0",
+          "duration_group": 600,
+          "question_category": "TOS",
+          "answer": "B",
+          "parsed_pred": "C"
+        },
+        "submission": {
+          "86CxyhFV9MI_0": "C"
+        }
+      },
+      "selection": {
+        "selection_mode": "bi_level",
+        "selection_hit": true,
+        "selection_key": "86CxyhFV9MI.mp4_In the video, which subtitles appear at the same time as the man with black hair, dressed in grey clothes with black sleeves, on stage?",
+        "selection_files": [
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/longvideobench.json"
+        ],
+        "selected_unit_indices": [
+          11,
+          12,
+          38,
+          10,
+          21,
+          28,
+          8,
+          13
+        ],
+        "selection_config": {
+          "selected_topk": 8,
+          "selected_chunk_size": 6,
+          "compression": 4,
+          "relevance oracle": "languagebind"
+        }
+      },
+      "source_path": "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/logs/videoxl2-w_chunk_bilevel-longvideobench_val_v/0623_0321_videoxl2_videoxl2_model_args_444978/longvideobench_val_v.json"
+    },
+    {
+      "modern_task": "longvideobench_val_v",
+      "embedded_task": "longvideobench_val_v",
+      "doc_id": 1,
+      "stable_sample_id": "86CxyhFV9MI_1",
+      "prompt": "Which subtitles appear at the same time as the gray-haired man in the black shirt on stage in the video?\nA. [applause] and Seye Seye Seye Seye Seye\nB. [applause] and my love that I made on the ke is\nC. captain of the godson, three three three three three three and my love that I made on the ke is\nD. [applause] and captain of the godson, three three three three three three\nAnswer with the option's letter from the given choices directly.\n",
+      "video_path": "86CxyhFV9MI.mp4",
+      "prediction": "D",
+      "target": 2,
+      "scores": {
+        "lvb_acc": {
+          "id": "86CxyhFV9MI_1",
+          "duration_group": 600,
+          "question_category": "TOS",
+          "answer": "C",
+          "parsed_pred": "D"
+        },
+        "submission": {
+          "86CxyhFV9MI_1": "D"
+        }
+      },
+      "selection": {
+        "selection_mode": "bi_level",
+        "selection_hit": true,
+        "selection_key": "86CxyhFV9MI.mp4_Which subtitles appear at the same time as the gray-haired man in the black shirt on stage in the video?",
+        "selection_files": [
+          "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/selected_infos/longvideobench.json"
+        ],
+        "selected_unit_indices": [
+          11,
+          8,
+          21,
+          12,
+          23,
+          10,
+          24,
+          22
+        ],
+        "selection_config": {
+          "selected_topk": 8,
+          "selected_chunk_size": 6,
+          "compression": 4,
+          "relevance oracle": "languagebind"
+        }
+      },
+      "source_path": "/home/tangz/playback/Video-XL/Video-XL-2/eval/lvu/w_chunk_bilevel/logs/videoxl2-w_chunk_bilevel-longvideobench_val_v/0623_0321_videoxl2_videoxl2_model_args_444978/longvideobench_val_v.json"
+    }
+  ]
+}

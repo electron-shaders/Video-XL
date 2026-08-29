@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "tasks": {
+    "videomme": {
+      "paths": [
+        "../eval/lvu/w_chunk_bilevel/selected_infos/videomme/videomme_short.json",
+        "../eval/lvu/w_chunk_bilevel/selected_infos/videomme/videomme_mid.json",
+        "../eval/lvu/w_chunk_bilevel/selected_infos/videomme/videomme_long.json"
+      ]
+    },
+    "videomme_long": "../eval/lvu/w_chunk_bilevel/selected_infos/videomme/videomme_long.json",
+    "videomme_long_w_subtitle": "../eval/lvu/w_chunk_bilevel/selected_infos/videomme/videomme_long.json",
+    "videomme_w_subtitle": {
+      "paths": [
+        "../eval/lvu/w_chunk_bilevel/selected_infos/videomme/videomme_short.json",
+        "../eval/lvu/w_chunk_bilevel/selected_infos/videomme/videomme_mid.json",
+        "../eval/lvu/w_chunk_bilevel/selected_infos/videomme/videomme_long.json"
+      ]
+    },
+    "mlvu_dev": "../eval/lvu/w_chunk_bilevel/selected_infos/mlvu.json",
+    "lvbench": {
+      "paths": [
+        "../eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_cartoon.json",
+        "../eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_documentary.json",
+        "../eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_live.json",
+        "../eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_selfmedia.json",
+        "../eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_sport.json",
+        "../eval/lvu/w_chunk_bilevel/selected_infos/lvbench/lvbench_tv.json"
+      ]
+    },
+    "longvideobench_val_v": "../eval/lvu/w_chunk_bilevel/selected_infos/longvideobench.json"
+  }
+}
