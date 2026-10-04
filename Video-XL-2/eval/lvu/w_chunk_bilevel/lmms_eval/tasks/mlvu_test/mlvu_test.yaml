@@ -1,9 +1,8 @@
-dataset_path: /share/minghao/Datasets/VideoDatasets/mlvu_test_dataset
+dataset_path: sy1998/MLVU_Test
 dataset_kwargs:
   token: True
   cache_dir: mlvu_test
   video: True
-  load_from_disk: True
 generation_kwargs:
   max_new_tokens: 16
   temperature: 0
